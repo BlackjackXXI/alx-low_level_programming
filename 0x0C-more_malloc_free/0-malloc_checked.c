@@ -9,14 +9,14 @@
  */
 void *malloc_checked(unsigned int size)
 {
-	void *mallok;
+	void *mal;
 
 	if (size <= 0)
 		exit(98);
 
-	mallok = malloc(size);
-	if (!mallok)
+	mal = malloc(size);
+	if (!mal)
 		exit(98);
 	else
-		return (mallok);
+		return (mal);
 }
