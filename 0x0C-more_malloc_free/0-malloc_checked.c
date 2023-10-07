@@ -14,7 +14,7 @@ void *malloc_checked(unsigned int size)
 	if (size <= 0)
 		exit(98);
 
-	ptr = malloc(space);
+	ptr = malloc(size);
 	if (!ptr)
 		exit(98);
 	else
