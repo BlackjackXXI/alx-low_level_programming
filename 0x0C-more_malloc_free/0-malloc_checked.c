@@ -3,7 +3,7 @@
 /**
  * malloc_checked - allocates memory using malloc.
  *
- * @space: the size of the space to allcate.
+ * @size: the size of the space to allcate.
  *
  * Return: pointer to the allocated memory
  */
