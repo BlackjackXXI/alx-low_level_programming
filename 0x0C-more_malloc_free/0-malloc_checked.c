@@ -1,22 +1,22 @@
 #include "main.h"
 
 /**
- * checkedmalloc - allocates memory using malloc.
+ * checked - allocates memory using malloc.
  *
- * @allspace: the size of the space to allcate.
+ * @space: the size of the space to allcate.
  *
  * Return: pointer to the allocated memory
  */
-void *checkedmalloc(unsigned int size)
+void *checked(unsigned int size)
 {
-	void *ptr;
+	void *pointer;
 
 	if (size <= 0)
 		exit(98);
 
-	ptr = malloc(allspace);
-	if (!ptr)
+	pointer = malloc(space);
+	if (!pointer)
 		exit(98);
 	else
-		return (ptr);
+		return (pointer);
 }
