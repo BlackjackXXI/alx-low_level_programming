@@ -9,14 +9,14 @@
  */
 void *checked(unsigned int size)
 {
-	void *pointer;
+	void *ptr;
 
 	if (size <= 0)
 		exit(98);
 
-	pointer = malloc(space);
-	if (!pointer)
+	ptr = malloc(space);
+	if (!ptr)
 		exit(98);
 	else
-		return (pointer);
+		return (ptr);
 }
