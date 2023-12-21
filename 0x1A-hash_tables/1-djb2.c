@@ -5,7 +5,7 @@
  * @str: String to hash.
  * Return: Hash value.
  */
-unsigned long int custom_djb2_hash(const unsigned char *str)
+unsigned long int hash_djb2(const unsigned char *str)
 {
 	unsigned long int hash_value = 5381;
 	int current_char;
