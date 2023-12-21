@@ -6,7 +6,7 @@
  * Return: A pointer to the new hash table.
  */
 
-hash_table_t *create_hash_table(unsigned long int size)
+hash_table_t *hash_table_create(unsigned long int size)
 {
 	unsigned int index = 0;
 	hash_table_t *new_table = malloc(sizeof(hash_table_t));
