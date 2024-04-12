@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "search_algos.h"
 #include <math.h>
+
 /**
  * linear_search - performs a search for a value in an array of integers
  * @array: points to the first element of the array to look for
@@ -12,25 +13,27 @@
  */
 int binary_search(int *array, size_t size, int value)
 {
-	size_t s, left, right;
+	size_t i, left, right;
+
 	if (!array)
 		return (-1);
 
 	for (left = 0, right = size - 1; right >= left;)
 {
 		printf("Searching in array: ");
-		for (s = left; s < right; s++)
+		for (i = left; i < right; i++)
    
 			printf("%d, ", array[i]);
 		printf("%d\n", array[i]);
-		s = left + (right - left) / 2;
+		i = left + (right - left) / 2;
    
-		if (array[s] == value)
-			return (s);
-		if (array[s] > value)
-			right = s - 1;
+		if (array[i] == value)
+			return (i);
+		if (array[i] > value)
+			right = i - 1;
 		else
-			left = s + 1;
-}
+			left = i + 1;
+	}
+
 	return (-1);
 }
