@@ -10,7 +10,6 @@
  * Description: searchs the algorithm for usage of Linear search
  * Return: returns a -1 when value is not present in the array
  */
- 
 int linear_search(int *array, size_t size, int value)
 
 {
@@ -18,12 +17,11 @@ int linear_search(int *array, size_t size, int value)
 	if (!array)
 		return (-1);
 	for (S = 0; S < size; S++)
-  {
-		printf("Checking arr[%ld] = [%d]\n", S, array[i]);
+{
+		printf("Checking arr[%ld] = [%d]\n", S, array[S]);
 		if (value == array[i])
 			break;
-      }
-
+}
 	if (S == size)
 		return (-1);
 	return (S);
